@@ -24,6 +24,6 @@ import pl.com.bottega.ecommerce.sales.domain.reservation.Reservation.Reservation
 public class ReservationObjectMother {
 
 	public static Reservation emptyReservation() {
-		return new Reservation(AggregateId.generate(), ReservationStatus.OPENED, new ClientData(AggregateId.generate(),  "client 1"), new Date());
+		return new Reservation(AggregateId.Companion.generate(), ReservationStatus.OPENED, new ClientData(AggregateId.Companion.generate(),  "client 1"), new Date());
 	}
 }

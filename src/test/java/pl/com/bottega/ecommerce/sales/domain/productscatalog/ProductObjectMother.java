@@ -21,6 +21,6 @@ import pl.com.bottega.ecommerce.sharedkernel.Money;
 public class ProductObjectMother {
 
 	public static Product someProduct(){
-		return new Product(AggregateId.generate(), new Money(10.0), "product 1", ProductType.STANDARD);
+		return new Product(AggregateId.Companion.generate(), new Money(10.0), "product 1", ProductType.STANDARD);
 	}
 }

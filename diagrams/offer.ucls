@@ -104,7 +104,7 @@
   <association id="15">    
     <bendpoint x="687" y="361"/>    
     <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="16" name="availabeItems"/>      
+      <attribute id="16" name="availableItems"/>
       <multiplicity id="17" minimum="0" maximum="2147483647"/>    
     </end>    
     <end type="TARGET" refId="2" navigable="true"/>    

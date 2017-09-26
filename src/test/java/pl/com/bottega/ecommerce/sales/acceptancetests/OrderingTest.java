@@ -30,7 +30,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import pl.com.bottega.ecommerce.canonicalmodel.publishedlanguage.AggregateId;
 import pl.com.bottega.ecommerce.sales.application.api.command.OrderDetailsCommand;
-import pl.com.bottega.ecommerce.sales.application.api.service.OfferChangedExcpetion;
+import pl.com.bottega.ecommerce.sales.application.api.service.OfferChangedException;
 import pl.com.bottega.ecommerce.sales.application.api.service.OrderingService;
 import pl.com.bottega.ecommerce.sales.domain.offer.Offer;
 import pl.com.bottega.ecommerce.sales.readmodel.orders.OrderFinder;
@@ -84,6 +84,6 @@ public class OrderingTest {
 			orderingService.confirm(orderId, new OrderDetailsCommand(), offer);
 			Assert.fail();
 		}
-		catch(OfferChangedExcpetion e){}
+		catch(OfferChangedException e){}
 	}
 }
